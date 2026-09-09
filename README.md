@@ -10,15 +10,6 @@ Everything runs in the browser. There is no backend and no build step.
 npx serve public
 ```
 
-## Docker
-
-```sh
-docker build -t thirds .
-docker run -p 8080:80 thirds
-```
-
-The image serves the app on port 80.
-
 ## OG image
 
 `public/og.png` is a 1200×630 screenshot of `assets/og.html`.
