@@ -11,17 +11,17 @@ export function validateScreenshot({ width, height }) {
   const warnings = []
 
   if (width < MIN_SLICE_WIDTH * SLICE_COUNT) {
-    errors.push(`Too small. Each third would be under ${MIN_SLICE_WIDTH}px wide, so it will look blurry on X.`)
+    errors.push(`Too small. Each third would be under ${MIN_SLICE_WIDTH}px wide.`)
   }
 
   if (aspect < MIN_ASPECT) {
-    errors.push('Taller than it is wide. This trick only works on wide screenshots.')
+    errors.push('Use a wide screenshot. This one is taller than it is wide.')
   } else if (aspect < NARROW_ASPECT) {
-    warnings.push('Almost square. Each third comes out very tall, so X may crop the top and bottom.')
+    warnings.push('Almost square. X may crop the top and bottom of each third.')
   }
 
   if (aspect > WIDE_ASPECT) {
-    warnings.push('Very wide. Each third comes out landscape, so X may fall back to the grid layout instead of the carousel.')
+    warnings.push('Very wide. X may show a grid instead of a carousel.')
   }
 
   return { ok: errors.length === 0, errors, warnings, aspect }

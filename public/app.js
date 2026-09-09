@@ -53,14 +53,14 @@ downloadAll.addEventListener('click', () => {
 async function handleFile(file) {
   if (!file) return
   if (!file.type.startsWith('image/')) {
-    return showReport({ errors: ['That file is not an image.'], warnings: [] })
+    return showReport({ errors: ['Not an image.'], warnings: [] })
   }
 
   let image
   try {
     image = await createImageBitmap(file)
   } catch {
-    return showReport({ errors: ['Could not decode that image. PNG or JPEG works best.'], warnings: [] })
+    return showReport({ errors: ['Could not read that image. Use PNG or JPEG.'], warnings: [] })
   }
 
   const verdict = validateScreenshot(image)
@@ -88,7 +88,7 @@ function showReport({ errors, warnings, ok }, image) {
     ...warnings.map((text) => ({ text, className: 'is-warning' })),
   ]
   if (ok && notes.length === 0) {
-    notes.push({ text: 'Looks good. This will slice cleanly.', className: 'is-ok' })
+    notes.push({ text: 'Looks good.', className: 'is-ok' })
   }
   const list = document.createElement('ul')
   for (const note of notes) {
