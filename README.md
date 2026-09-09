@@ -18,3 +18,9 @@ docker run -p 8080:80 thirds
 ```
 
 The image serves the app on port 80.
+
+## Deploy
+
+```sh
+buzz deploy ./public --site thirds
+```
