@@ -148,15 +148,24 @@ function buildDownloadCard({ url, fileName, slice, index }) {
   thumb.src = url
   thumb.alt = ''
 
+  const body = document.createElement('div')
+  body.className = 'download-card-body'
+
+  const title = document.createElement('div')
+  title.className = 'download-card-title'
+  const label = document.createElement('span')
+  label.textContent = `Image ${index + 1}`
+  const dims = document.createElement('small')
+  dims.textContent = `${slice.width} × ${slice.height}`
+  title.append(label, dims)
+
   const link = document.createElement('a')
   link.href = url
   link.download = fileName
-  link.textContent = `Download ${index + 1}`
+  link.textContent = 'Download'
 
-  const dims = document.createElement('small')
-  dims.textContent = `${slice.width} × ${slice.height}`
-
-  card.append(thumb, link, dims)
+  body.append(title, link)
+  card.append(thumb, body)
   return card
 }
 

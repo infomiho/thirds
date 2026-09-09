@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.45" stop-color="#3a2a7a"/>
+      <stop offset="0.72" stop-color="#d4577a"/>
+      <stop offset="0.9" stop-color="#f7a35c"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="1" stop-color="#ff9a5c"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a3f7a"/>
+      <stop offset="1" stop-color="#3e2a5c"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f2350"/>
+      <stop offset="1" stop-color="#1c1636"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151226"/>
+      <stop offset="1" stop-color="#0a0913"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7a35c" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0a0913"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#sky)"/>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="160" cy="120" r="2.5"/><circle cx="420" cy="80" r="1.8"/><circle cx="640" cy="200" r="2"/>
+    <circle cx="900" cy="60" r="2.2"/><circle cx="1180" cy="150" r="1.6"/><circle cx="1400" cy="90" r="2.4"/>
+    <circle cx="1650" cy="210" r="1.8"/><circle cx="300" cy="300" r="1.5"/><circle cx="1050" cy="280" r="1.7"/>
+    <circle cx="1500" cy="330" r="2"/><circle cx="760" cy="360" r="1.4"/><circle cx="1750" cy="40" r="1.6"/>
+  </g>
+  <circle cx="1120" cy="760" r="150" fill="url(#sun)"/>
+  <path fill="url(#far)" d="M0 820 L180 640 L330 740 L520 560 L700 720 L880 600 L1010 700 L1200 520 L1380 690 L1560 590 L1800 760 L1800 1200 L0 1200 Z"/>
+  <path fill="url(#mid)" d="M0 900 L240 760 L420 860 L600 720 L790 850 L960 780 L1130 900 L1320 740 L1520 880 L1700 800 L1800 860 L1800 1200 L0 1200 Z"/>
+  <rect x="0" y="960" width="1800" height="240" fill="url(#water)"/>
+  <path fill="url(#near)" d="M0 1010 L150 960 L320 1000 L470 940 L640 1010 L820 970 L1000 1020 L1160 980 L1350 1030 L1540 970 L1800 1020 L1800 1200 L0 1200 Z"/>
+  <g stroke="#ffd39a" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <path d="M1000 1060 H1240"/><path d="M1040 1100 H1200"/><path d="M1080 1140 H1160"/>
+  </g>
+</svg>
