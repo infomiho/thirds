@@ -1,6 +1,6 @@
 # Thirds
 
-Split a wide screenshot into three tall images. Post them to X in order and the carousel shows them as one seamless panorama.
+Split a wide screenshot into three tall images. Post them to X in order and X shows them side by side, like one wide image.
 
 Everything runs in the browser. There is no backend and no build step.
 

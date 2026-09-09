@@ -1,7 +1,6 @@
 :root {
   --color-bg: #0b0e11;
   --color-surface: #14181c;
-  --color-surface-raised: #1c2126;
   --color-border: #262c32;
   --color-border-strong: #343b42;
   --color-text: #e7e9ea;
@@ -23,10 +22,8 @@
   --text-sm: 14px;
   --text-base: 15px;
   --text-md: 17px;
-  --text-lg: 20px;
   --text-xl: 30px;
 
-  --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-full: 9999px;
