@@ -510,6 +510,15 @@ h1 {
   color: var(--color-text-muted);
 }
 
+.footer a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-text);
+}
+
 @media (max-width: 520px) {
   h1 {
     font-size: 22px;
